@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121212;
+  color: #f0f0f0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.auth-container {
+  background: #1e1e2f;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 350px;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.15);
+  transition: 0.4s ease-in-out;
+}
+
+.form-box {
+  transition: all 0.5s ease;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin: 10px 0;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2a2a3b;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: background 0.3s;
+}
+
+input:focus {
+  background-color: #3a3a4d;
+}
+
+button {
+  margin-top: 12px;
+  padding: 12px;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.toggle-text {
+  margin-top: 14px;
+  font-size: 0.9rem;
+  color: #ccc;
+  cursor: pointer;
+  text-align: center;
+  transition: color 0.3s;
+}
+
+.toggle-text:hover {
+  color: #00c6ff;
+}
